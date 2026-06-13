@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <numbers>   // std::numbers::pi (C++20)
+#include <numbers>
 #include "Vector2D.h"
 
 int main() {
@@ -13,7 +13,6 @@ int main() {
         std::cin >> v;
     }
 
-    // Сортировка по длине (operator< определён в Vector2D)
     std::sort(vecs.begin(), vecs.end());
 
     std::cout << "\nОтсортированные векторы по длине:\n";
@@ -21,7 +20,6 @@ int main() {
         std::cout << v << "  |длина| = " << v.length() << "\n";
     }
 
-    // Небольшая демонстрация операторов
     const Vector2D& a = vecs.front();
     const Vector2D& b = vecs.back();
 
